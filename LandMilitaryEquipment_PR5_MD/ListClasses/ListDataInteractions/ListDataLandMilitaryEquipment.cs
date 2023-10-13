@@ -19,16 +19,6 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions
         public ListDataLandMilitaryEquipment()
         { }
 
-        public override string ToString()
-        {
-            string str = "";
-            foreach (var equip in LandMilitaryEquipments)
-            {
-                str += equip.ToString();
-            }
-            return str;
-        }
-
         public void Create(LandMilitaryEquipment obj)
         {
             LandMilitaryEquipments.Add(obj);
@@ -45,13 +35,7 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions
         public void Update(LandMilitaryEquipment foundRemoveAndAddData, LandMilitaryEquipment newData)
         {
             LandMilitaryEquipments.Remove(foundRemoveAndAddData);
-            foundRemoveAndAddData.Title = newData.Title;
-            foundRemoveAndAddData.Model = newData.Model;
-            foundRemoveAndAddData.Implementators = newData.Implementators;
-            foundRemoveAndAddData.Company = newData.Company;
-            foundRemoveAndAddData.Price = newData.Price;
-            foundRemoveAndAddData.Type = newData.Type;
-            LandMilitaryEquipments.Add(foundRemoveAndAddData);
+            LandMilitaryEquipments.Add(newData);
         }
 
         public void Delete(LandMilitaryEquipment obj)

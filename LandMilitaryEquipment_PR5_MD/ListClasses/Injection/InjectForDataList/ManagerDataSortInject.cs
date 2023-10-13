@@ -3,7 +3,7 @@ using LandMilitaryEquipment_PR5_MD.ListClasses.InterfacesForDataList;
 
 namespace LandMilitaryEquipment_PR5_MD.ListClasses.Injection.InjectForDataList
 {
-    public class ManagerDataSortInject<T> : IDataListInject
+    public class ManagerDataSortInject : IDataListInject
     {
         private readonly IDataExpansionSorting _DataExpansionSorting;
         private readonly ITransaction _Transaction;

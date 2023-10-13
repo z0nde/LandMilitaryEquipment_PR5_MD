@@ -1,11 +1,16 @@
 ﻿using LandMilitaryEquipment_PR5_MD.Classes;
 using LandMilitaryEquipment_PR5_MD.ListClasses;
+using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
 using System.Threading.Tasks.Dataflow;
 
 namespace LandMilitaryEquipment_PR5_MD.OperationsForController
 {
     public class Delete : IStrategyForController
     {
+        private readonly ListDataLandMilitaryEquipment _ListData;
+
+        public Delete(ListDataLandMilitaryEquipment listData) => _ListData = listData;
+
         public void StrategyCRUDForController()
         {
             /*LandMilitaryEquipment landMilitaryEquipment = new();

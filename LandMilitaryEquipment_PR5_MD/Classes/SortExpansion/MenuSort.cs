@@ -1,4 +1,6 @@
-﻿using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
+﻿using LandMilitaryEquipment_PR5_MD.ListClasses;
+using LandMilitaryEquipment_PR5_MD.ListClasses.Injection.InjectForDataList;
+using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
 using LandMilitaryEquipment_PR5_MD.MenuController;
 
 namespace LandMilitaryEquipment_PR5_MD.Classes.SortExpansion
@@ -8,8 +10,8 @@ namespace LandMilitaryEquipment_PR5_MD.Classes.SortExpansion
         public void Perform()
         {
             Console.WriteLine("Сортировка по возрастанию:");
-            ListDataLandMilitaryEquipment listLME = new();
-            listLME.Sorting(new SortLME());
+            CentralDataLandMilitaryEquipment centralData = new();
+            centralData.Expansion(new ManagerDataSortInject(new /*затычка*/ListDataLandMilitaryEquipment(), new SortLME()));
         }
     }
 }

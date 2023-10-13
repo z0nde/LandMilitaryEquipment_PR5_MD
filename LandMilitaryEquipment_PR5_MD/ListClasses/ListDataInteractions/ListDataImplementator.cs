@@ -18,6 +18,16 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions
         public ListDataImplementator()
         { }
 
+        public override string ToString()
+        {
+            string str = "";
+            foreach (var impl in Implementators)
+            {
+                str += impl.ToString();
+            }
+            return str;
+        }
+
         public void Create(Implementator obj)
         {
             Implementators.Add(obj);
@@ -34,10 +44,7 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions
         public void Update(Implementator foundRemoveAndAddData, Implementator newData)
         {
             Implementators.Remove(foundRemoveAndAddData);
-            foundRemoveAndAddData.Surname = newData.Surname;
-            foundRemoveAndAddData.Name = newData.Name;
-            foundRemoveAndAddData.Patronymic = newData.Patronymic;
-            Implementators.Add(foundRemoveAndAddData);
+            Implementators.Add(newData);
         }
 
         public void Delete(Implementator obj)

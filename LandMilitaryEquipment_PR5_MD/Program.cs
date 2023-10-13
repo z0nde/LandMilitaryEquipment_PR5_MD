@@ -10,13 +10,16 @@
 разработчик, предприятие, стоимость, тип
 */
 
+using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
+
 namespace LandMilitaryEquipment_PR5_MD
 {
     public class Program
     {
         public static void Main()
         {
-            CentralController.MenuCentralController();
+            ListDataLandMilitaryEquipment listData = new();
+            CentralController.MenuCentralController(listData);
         }
     }
 }
