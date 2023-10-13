@@ -46,7 +46,7 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions
         public LandMilitaryEquipment? FoundObj(LandMilitaryEquipment landMilitaryEquipment)
         {
             return LandMilitaryEquipments
-                .Where(s => s.Title!.ToLower() == landMilitaryEquipment.Title!.ToLower())
+                .Where(s => s.Title!.ToLower().Equals(landMilitaryEquipment))
                 .Select(s => s).FirstOrDefault();
         }
 
