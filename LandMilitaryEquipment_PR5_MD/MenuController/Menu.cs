@@ -6,7 +6,7 @@ namespace LandMilitaryEquipment_PR5_MD.MenuController
     {
         public List<ContentMenu> ListMenu { get; set; } = new();
 
-        private static void Expansion(IExpansion expansion)
+        private void Expansion(IExpansion expansion)
         {
             expansion.Perform();
         }

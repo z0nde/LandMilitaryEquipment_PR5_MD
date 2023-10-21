@@ -11,10 +11,6 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.Impl
             {
                 if (obj.Surname != null && obj.Name != null)
                 {
-                    obj.Surname = obj.Surname.Replace(" ", "");
-                    obj.Name = obj.Name.Replace(" ", "");
-                    obj.Patronymic = obj.Patronymic.Replace(" ", "");
-
                     if (obj.Surname != "" && obj.Name != "")
                     {
                         return obj;

@@ -21,26 +21,5 @@ namespace LandMilitaryEquipment_PR5_MD.Classes
             Price = price;
             Type = type;
         }
-
-        public override bool Equals(object? obj)
-        {
-            return Equals(obj as LandMilitaryEquipment);
-        }
-
-        public bool Equals(LandMilitaryEquipment obj)
-        {
-            return obj != null &&
-                   Title == obj.Title &&
-                   Model == obj.Model &&
-                   Implementators == obj.Implementators &&
-                   Company == obj.Company &&
-                   Price == obj.Price &&
-                   Type == obj.Type;
-        }
-
-        public override string ToString()
-        {
-            return $"Название: {Title}, Модель: {Model}, Разработчик: {Implementators}, Компания: {Company}, Цена: {Price}, Тип: {Type}.";
-        }
     }
 }

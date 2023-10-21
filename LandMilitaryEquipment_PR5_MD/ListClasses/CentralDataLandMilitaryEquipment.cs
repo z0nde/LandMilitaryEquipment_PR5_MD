@@ -1,12 +1,11 @@
-﻿using LandMilitaryEquipment_PR5_MD.ListClasses.Injection;
-
-namespace LandMilitaryEquipment_PR5_MD.ListClasses
+﻿namespace LandMilitaryEquipment_PR5_MD.ListClasses
 {
     public class CentralDataLandMilitaryEquipment
     {
-        public void Expansion(IDataListInject dataListInject)
+        public void Expansion(Injection.IDataListInject dataListInject)
         {
-            dataListInject.Expansion();
+            if (dataListInject != null)
+                dataListInject.Expansion();
         }
     }
 }

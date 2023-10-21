@@ -1,17 +1,24 @@
-﻿using LandMilitaryEquipment_PR5_MD.ListClasses.InterfacesForDataList;
+﻿using LandMilitaryEquipment_PR5_MD.ListClasses.DataOut.InterfacesForOutput;
+using LandMilitaryEquipment_PR5_MD.ListClasses.InterfacesForDataList;
 
 namespace LandMilitaryEquipment_PR5_MD.ListClasses.Injection.InjectForDataList
 {
     public class ManagerDataReadInject<T> : IDataListInject
     {
+        private readonly IDataOutputNullArgs _OutputNullArgs;
         private readonly IDataExpansionRead<T> _DataExpansionRead;
 
-        public ManagerDataReadInject(IDataExpansionRead<T> dataExpansionRead) => 
-            _DataExpansionRead = dataExpansionRead;
+        private readonly List<T> _Obj;
+
+        public ManagerDataReadInject(IDataOutputNullArgs dataOutputNullArgs, IDataExpansionRead<T> dataExpansionRead, List<T> obj) => 
+            (_OutputNullArgs, _DataExpansionRead, _Obj) = (dataOutputNullArgs, dataExpansionRead, obj);
 
         public void Expansion()
         {
-            _DataExpansionRead.Read();
+            foreach (var o in _Obj)
+            {
+                _OutputNullArgs.Output(_DataExpansionRead.Read(o));
+            }
         }
     }
 }

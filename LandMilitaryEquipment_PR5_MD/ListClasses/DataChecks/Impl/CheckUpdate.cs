@@ -12,10 +12,6 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.Impl
                 if (foundRemoveAndAddData.Surname != null && foundRemoveAndAddData.Name != null &&
                     newData.Surname != null && newData.Name != null && newData.Patronymic != null)
                 {
-                    newData.Surname = newData.Surname.Replace(" ", "");
-                    newData.Name = newData.Name.Replace(" ", "");
-                    newData.Patronymic = newData.Patronymic.Replace(" ", "");
-
                     if (foundRemoveAndAddData.Surname != "" && foundRemoveAndAddData.Name != "" &&
                         newData.Surname != "" && newData.Name != "")
                     {

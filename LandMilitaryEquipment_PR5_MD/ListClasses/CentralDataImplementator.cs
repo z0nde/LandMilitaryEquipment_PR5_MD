@@ -2,6 +2,10 @@
 {
     public class CentralDataImplementator
     {
-
+        public void Expansion(Injection.IDataListInject dataListInject)
+        {
+            if (dataListInject != null)
+                dataListInject.Expansion();
+        }
     }
 }

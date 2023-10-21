@@ -11,8 +11,8 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.InjectForDataList
 
         private readonly T _Obj;
 
-        public ManagerDataCreateInject(IDataExpansionCreate<T> dataExpansionCreate, IDataCheckOneTArg<T> dataCheckCreate, T obj) =>
-            (_DataExpansionCreate, _DataCheckCreate, _Obj) = (dataExpansionCreate, dataCheckCreate, obj);
+        public ManagerDataCreateInject(IDataCheckOneTArg<T> dataCheckCreate, IDataExpansionCreate<T> dataExpansionCreate, T obj) =>
+            (_DataCheckCreate, _DataExpansionCreate, _Obj) = (dataCheckCreate, dataExpansionCreate, obj);
 
         public void Expansion()
         {
