@@ -7,7 +7,7 @@ using LandMilitaryEquipment_PR5_MD.MenuController;
 
 namespace LandMilitaryEquipment_PR5_MD.OperationsForController
 {
-    public class Create : IStrategyForController
+    public class Create : IStrategyForController, IUpdateInject
     {
         private readonly ListDataLandMilitaryEquipment _ListData;
 

@@ -2,6 +2,6 @@
 {
     public interface IDataCheckTwoTArgs<T>
     {
-        public T? Check(T obj, T obj1);
+        public object Check(T obj, T obj1);
     }
 }

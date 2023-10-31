@@ -1,6 +1,6 @@
 ﻿namespace LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.InterfacesForCheks;
 
-public interface IUpdateInject<T>
+public interface IUpdateCheckInject<T>
 {
     public T Check(T obj);
 }

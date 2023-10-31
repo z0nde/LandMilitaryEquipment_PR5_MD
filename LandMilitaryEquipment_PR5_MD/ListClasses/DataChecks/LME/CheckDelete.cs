@@ -3,7 +3,9 @@ using LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.InterfacesForCheks;
 
 namespace LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.LME
 {
-    public class CheckDelete : IDataCheckOneTArg<LandMilitaryEquipment>
+    public class CheckDelete : 
+        IDataCheckOneTArg<LandMilitaryEquipment>,
+        IUpdateCheckInject<LandMilitaryEquipment>
     {
         public LandMilitaryEquipment? Check(LandMilitaryEquipment obj)
         {
@@ -17,19 +19,16 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.LME
                     }
                     else
                     {
-                        Console.WriteLine("Введите корректное имя");
                         return null;
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Введите корректное имя");
                     return null;
                 }
             }
             else
             {
-                Console.WriteLine("Объект оказался путсым.");
                 return null;
             }
         }

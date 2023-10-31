@@ -14,11 +14,7 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.Impl
             {
                 return newImpl;
             }
-            else
-            {
-                Console.WriteLine("По вашему запросу ничего не найдено.");
-                return null;
-            }
+            return null;
         }
     }
 }

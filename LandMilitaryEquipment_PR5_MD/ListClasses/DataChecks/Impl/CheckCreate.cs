@@ -3,9 +3,9 @@ using LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.InterfacesForCheks;
 
 namespace LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.Impl
 {
-    public class CheckCreate : IDataCheckOneTArg<Implementator>
+    public class CheckCreate : IDataCheckOneTArg<Implementator>, IUpdateCheckInject<Implementator>
     {
-        public Implementator? Check(Implementator obj)
+        public Implementator? Check(Implementator? obj)
         {
             if (obj != null)
             {

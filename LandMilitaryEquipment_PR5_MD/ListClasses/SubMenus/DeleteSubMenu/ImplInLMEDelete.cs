@@ -1,6 +1,11 @@
-﻿namespace LandMilitaryEquipment_PR5_MD.ListClasses.SubMenus.DeleteSubMenu;
+﻿using LandMilitaryEquipment_PR5_MD.MenuController;
 
-public class ImplInLMEDelete
+namespace LandMilitaryEquipment_PR5_MD.ListClasses.SubMenus.DeleteSubMenu;
+
+public class ImplInLMEDelete : IExpansion
 {
-    
+    public void Perform()
+    {
+        
+    }
 }

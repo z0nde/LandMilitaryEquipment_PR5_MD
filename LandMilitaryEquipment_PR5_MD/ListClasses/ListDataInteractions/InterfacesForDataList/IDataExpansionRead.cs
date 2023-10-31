@@ -1,6 +1,4 @@
-﻿using LandMilitaryEquipment_PR5_MD.Classes;
-
-namespace LandMilitaryEquipment_PR5_MD.ListClasses.InterfacesForDataList
+﻿namespace LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions.InterfacesForDataList
 {
     public interface IDataExpansionRead<T>
     {

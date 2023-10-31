@@ -1,4 +1,4 @@
-﻿using LandMilitaryEquipment_PR5_MD.ListClasses.InterfacesForDataList;
+﻿using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions.InterfacesForDataList;
 
 namespace LandMilitaryEquipment_PR5_MD.Classes.OutputString
 {

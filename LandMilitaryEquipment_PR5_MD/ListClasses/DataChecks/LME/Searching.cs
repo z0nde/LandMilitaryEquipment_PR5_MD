@@ -13,12 +13,8 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.LME
             if (newEquip != null)
             {
                 return newEquip;
-            }
-            else
-            {
-                Console.WriteLine("По вашему запросу ничего не найдено.");
-                return null;
-            }
+            } 
+            return null;
         }
     }
 }

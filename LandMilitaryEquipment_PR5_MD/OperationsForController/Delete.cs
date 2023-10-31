@@ -3,10 +3,12 @@ using LandMilitaryEquipment_PR5_MD.ListClasses;
 using LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.LME;
 using LandMilitaryEquipment_PR5_MD.ListClasses.Injection.InjectForDataList;
 using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
+using LandMilitaryEquipment_PR5_MD.ListClasses.SubMenus.DeleteSubMenu;
+using LandMilitaryEquipment_PR5_MD.MenuController;
 
 namespace LandMilitaryEquipment_PR5_MD.OperationsForController
 {
-    public class Delete : IStrategyForController
+    public class Delete : IStrategyForController, IUpdateInject
     {
         private readonly ListDataLandMilitaryEquipment _ListData;
 
@@ -14,9 +16,8 @@ namespace LandMilitaryEquipment_PR5_MD.OperationsForController
 
         public void StrategyCRUDForController()
         {
-            //LandMilitaryEquipment landMilitaryEquipment = new();
-            //CentralDataLandMilitaryEquipment centralData = new();
-            //centralData.Expansion(new ManagerDataDeleteInject<LandMilitaryEquipment>(new CheckDelete(), new Searching(), _ListData, landMilitaryEquipment));
+            DependencyInjectionManagerMenu menu = new(new SubDelete(_ListData), new Linear());
+            menu.MenuAssembly();
         }
     }
 }

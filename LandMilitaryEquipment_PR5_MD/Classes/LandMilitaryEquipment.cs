@@ -1,5 +1,4 @@
 ﻿using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
-using System.Xml.Linq;
 
 namespace LandMilitaryEquipment_PR5_MD.Classes
 {
@@ -12,6 +11,8 @@ namespace LandMilitaryEquipment_PR5_MD.Classes
         public double Price { get; private set; }
         public string Type { get; private set; }
 
+        public LandMilitaryEquipment(string title) => Title = title;
+        
         public LandMilitaryEquipment(string title, string model, ListDataImplementator implementators, string company, double price, string type)
         {
             Title = title;
