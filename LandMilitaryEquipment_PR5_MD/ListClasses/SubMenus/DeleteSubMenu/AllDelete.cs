@@ -14,7 +14,7 @@ public class AllDelete : IExpansion
 
     public void Perform()
     {
-        foreach (var lme in _ListData.LandMilitaryEquipments)
+        foreach (var lme in _ListData.LandMilitaryEquipments.ToList())
         {
             _ListData.Delete(lme);
         }
