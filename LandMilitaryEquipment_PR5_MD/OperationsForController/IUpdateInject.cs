@@ -2,5 +2,5 @@
 
 public interface IUpdateInject
 {
-    public void StrategyCRUDForController();
+    public void Perform();
 }

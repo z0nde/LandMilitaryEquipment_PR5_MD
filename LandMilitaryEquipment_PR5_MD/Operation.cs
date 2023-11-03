@@ -6,9 +6,9 @@ namespace LandMilitaryEquipment_PR5_MD
     {
         public void Action(IStrategyForController strategy)
         {
-            if (strategy != null)
+            if (strategy != null!)
             {
-                strategy.StrategyCRUDForController();
+                strategy.Perform();
             }
         }
     }

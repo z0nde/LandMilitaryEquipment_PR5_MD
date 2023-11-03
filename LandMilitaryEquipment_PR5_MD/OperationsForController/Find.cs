@@ -8,7 +8,7 @@ namespace LandMilitaryEquipment_PR5_MD.OperationsForController
 
         public Find(ListDataLandMilitaryEquipment listData) => _ListData = listData;
 
-        public void StrategyCRUDForController()
+        public void Perform()
         {
             
         }

@@ -1,6 +1,4 @@
-﻿using LandMilitaryEquipment_PR5_MD.Classes;
-using LandMilitaryEquipment_PR5_MD.ListClasses.InterfacesForDataList;
-using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
+﻿using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
 using LandMilitaryEquipment_PR5_MD.MenuController;
 
 namespace LandMilitaryEquipment_PR5_MD.ListClasses.SubMenus.DeleteSubMenu;

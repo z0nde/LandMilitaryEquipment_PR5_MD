@@ -2,6 +2,6 @@
 {
     public interface IStrategyForController
     {
-        public void StrategyCRUDForController();
+        public void Perform();
     }
 }

@@ -1,5 +1,4 @@
-﻿using LandMilitaryEquipment_PR5_MD.ListClasses.InterfacesForDataList;
-using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
+﻿using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
 using LandMilitaryEquipment_PR5_MD.MenuController;
 using LandMilitaryEquipment_PR5_MD.MenuController.MenuItems;
 
@@ -17,8 +16,7 @@ public class SubDelete : IMenu
         Menu menu = new();
 
         menu.Create(new ContentMenu(1, "Удалить одну технику", new ItemDelete(_ListData)));
-        menu.Create(new ContentMenu(2, "Удалить всех разработчиков у одной техники", new ImplInLMEDelete()));
-        menu.Create(new ContentMenu(3, "Удалить весь список", new AllDelete(_ListData)));
+        menu.Create(new ContentMenu(2, "Удалить весь список", new AllDelete(_ListData)));
         menu.Create(new ContentMenu(0, "Выход", new MenuExit()));
         
         return menu;

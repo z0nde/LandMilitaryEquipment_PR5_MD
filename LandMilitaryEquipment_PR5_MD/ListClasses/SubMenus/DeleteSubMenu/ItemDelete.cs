@@ -1,16 +1,17 @@
 ﻿using LandMilitaryEquipment_PR5_MD.Classes;
 using LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.LME;
 using LandMilitaryEquipment_PR5_MD.ListClasses.Injection.InjectForDataList;
-using LandMilitaryEquipment_PR5_MD.ListClasses.InterfacesForDataList;
+using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
 using LandMilitaryEquipment_PR5_MD.MenuController;
+using LandMilitaryEquipment_PR5_MD.OperationsForController;
 
 namespace LandMilitaryEquipment_PR5_MD.ListClasses.SubMenus.DeleteSubMenu;
 
-public class ItemDelete : IExpansion
+public class ItemDelete : IExpansion, IUpdateInject
 {
-    private IDataExpansionDelete<LandMilitaryEquipment> _ListData;
+    private ListDataLandMilitaryEquipment _ListData;
 
-    public ItemDelete(IDataExpansionDelete<LandMilitaryEquipment> listData) => 
+    public ItemDelete(ListDataLandMilitaryEquipment listData) => 
         _ListData = listData;
 
     public void Perform()
@@ -19,6 +20,6 @@ public class ItemDelete : IExpansion
         string title = Console.ReadLine();
         LandMilitaryEquipment lme = new(title);
         CentralDataLandMilitaryEquipment centralData = new();
-        centralData.Expansion(new ManagerDataDeleteInject<LandMilitaryEquipment>(new CheckDelete(), new Searching(), _ListData, lme));
+        centralData.Expansion(new ManagerDataDeleteInject<LandMilitaryEquipment>(new CheckDelete(), _ListData, _ListData, lme));
     }
 }

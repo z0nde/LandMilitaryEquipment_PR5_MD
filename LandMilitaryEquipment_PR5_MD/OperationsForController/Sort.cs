@@ -10,7 +10,7 @@ namespace LandMilitaryEquipment_PR5_MD.OperationsForController
 
         public Sort(ListDataLandMilitaryEquipment listData) => _ListData = listData;
 
-        public void StrategyCRUDForController()
+        public void Perform()
         {
             DependencyInjectionManagerMenu dIManagerMenu = new(new ValidateSortMenu(), new Linear());
             dIManagerMenu.MenuAssembly();

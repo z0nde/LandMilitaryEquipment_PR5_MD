@@ -13,7 +13,7 @@ namespace LandMilitaryEquipment_PR5_MD.OperationsForController
 
         public Create(ListDataLandMilitaryEquipment listData) => _ListData = listData;
         
-        public void StrategyCRUDForController()
+        public void Perform()
         {
             //LandMilitaryEquipment landMilitaryEquipment = new();
             Console.Write("Введите назавние: ");

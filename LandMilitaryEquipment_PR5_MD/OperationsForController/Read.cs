@@ -13,7 +13,7 @@ namespace LandMilitaryEquipment_PR5_MD.OperationsForController
 
         public Read(ListDataLandMilitaryEquipment listData) => _ListData = listData;
 
-        public void StrategyCRUDForController()
+        public void Perform()
         {
             CentralDataLandMilitaryEquipment centralData = new();
             centralData.Expansion(new ManagerDataReadInject<LandMilitaryEquipment>(new Output(), new OutLandMilitaryEquipment(), _ListData.LandMilitaryEquipments));

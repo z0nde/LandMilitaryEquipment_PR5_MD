@@ -38,6 +38,7 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions
         {
             return LandMilitaryEquipments
                 .Where(s => s.Title!.ToLower().Equals(landMilitaryEquipment.Title.ToLower()))
+                //.Where(s => s.Title.ToLower() == landMilitaryEquipment.Title.ToLower())
                 .Select(s => s)
                 .FirstOrDefault();
         }
