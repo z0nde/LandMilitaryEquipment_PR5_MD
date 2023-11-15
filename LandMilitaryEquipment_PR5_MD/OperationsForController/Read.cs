@@ -1,5 +1,5 @@
 ﻿using LandMilitaryEquipment_PR5_MD.Classes;
-using LandMilitaryEquipment_PR5_MD.Classes.OutputString;
+using LandMilitaryEquipment_PR5_MD.ListClasses.DataOut.OutputString;
 using LandMilitaryEquipment_PR5_MD.ListClasses;
 using LandMilitaryEquipment_PR5_MD.ListClasses.DataOut;
 using LandMilitaryEquipment_PR5_MD.ListClasses.Injection.InjectForDataList;

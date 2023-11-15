@@ -1,4 +1,4 @@
-﻿using LandMilitaryEquipment_PR5_MD.Interfaces;
+﻿/*using LandMilitaryEquipment_PR5_MD.Interfaces;
 
 namespace LandMilitaryEquipment_PR5_MD.ListClasses.InterfacesForDataList
 {
@@ -6,4 +6,4 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.InterfacesForDataList
     {
         public void Sorting(ITransaction transaction);
     }
-}
+}*/

@@ -10,8 +10,7 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions
         IDataExpansionCreate<LandMilitaryEquipment>,
         IDataExpansionUpdate<LandMilitaryEquipment>,
         IDataExpansionDelete<LandMilitaryEquipment>,
-        IDataExpansionFound<LandMilitaryEquipment, LandMilitaryEquipment>,
-        IDataExpansionSorting
+        IDataExpansionFound<LandMilitaryEquipment, LandMilitaryEquipment>
     {
         public List<LandMilitaryEquipment> LandMilitaryEquipments { get; private set; } = new ();
 
@@ -41,11 +40,6 @@ namespace LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions
                 //.Where(s => s.Title.ToLower() == landMilitaryEquipment.Title.ToLower())
                 .Select(s => s)
                 .FirstOrDefault();
-        }
-
-        public void Sorting(ITransaction transaction)
-        {
-            transaction.Transaction();
         }
     }
 }

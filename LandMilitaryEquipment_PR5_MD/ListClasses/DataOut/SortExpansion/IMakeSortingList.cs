@@ -3,8 +3,8 @@ using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
 
 namespace LandMilitaryEquipment_PR5_MD.ListClasses.DataOut.SortExpansion
 {
-    public interface IOutputSorting
+    public interface IMakeSortingList
     {
-        public List<LandMilitaryEquipment> OutData(ListDataLandMilitaryEquipment listData);
+        public List<LandMilitaryEquipment> MakeList(ListDataLandMilitaryEquipment listData);
     }
 }

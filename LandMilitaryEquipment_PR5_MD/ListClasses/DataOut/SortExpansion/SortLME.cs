@@ -1,19 +1,17 @@
-﻿using LandMilitaryEquipment_PR5_MD.Interfaces;
+﻿using LandMilitaryEquipment_PR5_MD.Classes;
+using LandMilitaryEquipment_PR5_MD.Interfaces;
+using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
 
-namespace LandMilitaryEquipment_PR5_MD.Classes.SortExpansion
+namespace LandMilitaryEquipment_PR5_MD.ListClasses.DataOut.SortExpansion
 {
-    public class SortLME : ITransaction
+    public class SortLME : IMakeSortingList
     {
-        public void Transaction()
+        public List<LandMilitaryEquipment> MakeList(ListDataLandMilitaryEquipment listData)
         {
-            var obj = Data.ListLME
+            List<LandMilitaryEquipment> obj = listData.LandMilitaryEquipments
                 .OrderBy(s => s.Title)
                 .Select(s => s).ToList();
-
-            foreach (var item in obj)
-            {
-                Console.WriteLine(item.ToString());
-            }
+            return obj;
         }
     }
 }

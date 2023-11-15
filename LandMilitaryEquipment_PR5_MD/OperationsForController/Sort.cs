@@ -1,4 +1,4 @@
-﻿using LandMilitaryEquipment_PR5_MD.Classes.SortExpansion;
+﻿using LandMilitaryEquipment_PR5_MD.ListClasses.DataOut.SortExpansion;
 using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
 using LandMilitaryEquipment_PR5_MD.MenuController;
 
@@ -12,7 +12,7 @@ namespace LandMilitaryEquipment_PR5_MD.OperationsForController
 
         public void Perform()
         {
-            DependencyInjectionManagerMenu dIManagerMenu = new(new ValidateSortMenu(), new Linear());
+            DependencyInjectionManagerMenu dIManagerMenu = new(new ValidateSortMenu(_ListData), new Linear());
             dIManagerMenu.MenuAssembly();
         }
     }

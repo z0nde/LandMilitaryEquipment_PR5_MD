@@ -1,6 +1,6 @@
 ﻿using System.Text;
 using LandMilitaryEquipment_PR5_MD.Classes;
-using LandMilitaryEquipment_PR5_MD.Classes.OutputString;
+using LandMilitaryEquipment_PR5_MD.ListClasses.DataOut.OutputString;
 
 namespace LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
 
