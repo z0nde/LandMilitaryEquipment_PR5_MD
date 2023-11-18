@@ -1,4 +1,4 @@
-﻿namespace LandMilitaryEquipment_PR5_MD.ListClasses.InterfacesForDataList
+﻿namespace LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions.InterfacesForDataList
 {
     public interface IDataExpansionFound<out T, in T1>
     {

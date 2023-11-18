@@ -1,4 +1,5 @@
-﻿using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
+﻿using LandMilitaryEquipment_PR5_MD.ListClasses.DataChecks.Impl;
+using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions;
 using LandMilitaryEquipment_PR5_MD.OperationsForController;
 
 namespace LandMilitaryEquipment_PR5_MD.MenuController.MenuItems
@@ -12,7 +13,8 @@ namespace LandMilitaryEquipment_PR5_MD.MenuController.MenuItems
         public void Perform()
         {
             Operation operation = new();
-            Console.WriteLine("Поиск");
+            Console.WriteLine("Поиск"); 
+            
             operation.Action(new Find(_ListData));
         }
     }

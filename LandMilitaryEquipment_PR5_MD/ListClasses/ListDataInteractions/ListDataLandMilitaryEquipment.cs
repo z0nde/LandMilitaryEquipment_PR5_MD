@@ -1,6 +1,7 @@
 ﻿using LandMilitaryEquipment_PR5_MD.Classes;
 using LandMilitaryEquipment_PR5_MD.Interfaces;
 using LandMilitaryEquipment_PR5_MD.ListClasses.InterfacesForDataList;
+using LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions.InterfacesForDataList;
 
 namespace LandMilitaryEquipment_PR5_MD.ListClasses.ListDataInteractions
 {
